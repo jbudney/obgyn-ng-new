@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Debugging JavaScript in a Standalone Node.js Application</title>
+
+<!-- Add some colors to the page -->
+<link rel="stylesheet" type="text/css" href="assets/css/tutorial.css">
+
+<!-- Development version of jQuery -->
+<script src="js/jquery-2.1.4.js"></script>
+<!-- Never use minified scripts for debugging -->
+<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
+</head>
+<body>
+	<div id="content">
+		<h1>ssss</h1>
+		<ul>
+			<li>This tutorial project is based on the <a
+				href="https://github.com/oren/node-website-template">
+					Website/Web Service template in Node.js</a> by Oren Golan.
+			<li>This is a simple HTTP server, which serves it's content on
+				port 8080. Main file is <code>server.js</code>. It registers routers
+				for particular URL patterns.
+			<li>Static HTML content is served from <code>public_html</code>
+				folder through router <code>routes/static.js</code>.
+			<li>Index file is created from an EJS template <code>templates/index.ejs</code>
+				and served by router <code>routes/tutorial.js</code>. Data for the
+				template is taken from <code>tutorial/*</code> files, each
+				containing code walkthrough of one section.
+		</ul>
+	</div>
+</body>

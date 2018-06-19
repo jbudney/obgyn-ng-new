@@ -1,0 +1,109 @@
+<!-- Bootstrap -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+body { font-size: 100% }
+h1 {font-size: 200% }
+
+@media all and (max-width:600px) {
+    body {font-size: 70%}
+}
+</style>
+
+<div class="container-fluid">
+	<div class="row">
+		<nav class="navbar navbar-top">
+			<ul class="nav navbar-nav">
+			<!-- li><a routerLink="compose">test compose</a></li> -->
+				<li><a id="btn1" class="active" href="javascript:void(0)" (click)="openDrMarkModal();">Dr. Mark B. McCormick, M.D. F.A.C.O.G.</a></li>
+				<li><a id="btn2" href="http://www.drbradleysdouglasmd.com" active>Dr.
+						Bradley S. Douglas, M.D. F.A.C.O.G.</a></li>
+				<li><a  id="btn3" href="javascript:void(0)" (click)="openDrAlleyModal();">Dr. Alexandra Lieberman
+						D.O. F.A.C.O.O.G</a></li>
+				<li><a id="btn4" href="javascript:void(0)" (click)="openDrBrianModal();">Dr. Brian E. Haley, M.D. F.A.C.O.G.</a></li>
+			 
+			</ul>
+			
+		</nav>
+		<!--  
+		<router-outlet></router-outlet>
+		<router-outlet name="popup"></router-outlet>
+		-->
+	</div>
+</div>
+ 
+ 
+ <div class="container-fluid"> 
+  <div class="jumbotron img-height" style="background-image: url(../assets/img/main_flipped_pregnant_side.png); background-size: 100%; background-repeat: no-repeat;">
+    
+   <div class="container text-center" style="display:inline">
+    <div class="row vertical-top-row"> 
+      <img src="../assets/img/logo2.png" alt="Flower" class="vcenter" height="5%" width="5%">
+    </div> 
+    <div id="main-obgyn-text"> 
+	    <div class="row vertical-center-row">
+	    	<p class="mainwelcome text-center">Welcome To Boca Raton</p> 
+	    	<p class="mainwelcome text-center">OB/GYN Specialists</p>
+	    	<p class="mainaddress text-center">1050 NW 15th Street,215A, Boca Raton, FL 33486</p>
+	    </div>
+    
+    <phone></phone>
+    
+    </div> <!-- main-obgyn-text -->
+   </div><!-- container bg-1 text-center --> 
+
+    	<div class="container-fluid row">
+			<div id="aboutus" class="col-md-6">
+				<span> <br>
+				<br>
+					<h2 style="color: pink">ABOUT US:</h2>
+					<div class="half-rule"></div>
+					<p class="light">Caring for women for over 30 years.....</p>
+					<p class="light">
+						Taking time to care..
+						<aboutus></aboutus>
+					</p> <!--  button (click)="onClick()">AlertAlertAlertAlert</button>-->
+					<!--  <button (click)="onClickEndometriosis()">AlertAlertAlertAlert</button>-->
+				</span>
+				<p>
+					<products></products>
+				</p>
+				<!--  p class="fb-like" data-href="http://www.obgynspecialistllc.com/drAlleySchmidtLieberman.html" data-width="400" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></p>
+   -->
+			</div>
+			<!-- id="aboutus" -->
+			<style>
+				span.link {
+					color: blue;
+					cursor: pointer;
+					text-decoration: underline;
+				}
+				</style>
+			<div class="col-sm-6">
+				<br>
+				<br>
+				<awards></awards>
+			</div>
+			<!-- row -->
+		</div>
+		<!-- aboutus -->
+     
+   <div class="jumbotron footer-height" style="background-image: url(../assets/img/couplefooter.png); width: 100%; height: 205px">
+			<div id="subscribe" class="row vertical-center-row">
+				
+				<h4>SUBSCRIBE</h4>
+				<div class="address">Sign up to hear from us about the latest
+					procedures!</div>
+				<subscribe></subscribe>
+				<img id="flower" src="../assets/img/logo2.png" alt="Flower"
+					height="5%" width="5%">
+			</div>
+		</div>
+
+
+  
+   <div (window:resize)="onResize($event)"></div>
+   <div *ngIf="message" class="alert alert-danger text-center" style="width: 40%; font-size: 11px" >{{message}}</div>
+   
+</div><!-- jumbotron -->

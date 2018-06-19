@@ -1,0 +1,29 @@
+<div class="container-fluid custom-modal-container">
+	<div class="row custom-modal-header modal-img-header">
+		<div class="col-sm-12">
+			<div class="">
+				<h1>{{context.title}}</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row" [ngClass]="{'myclass' : shouldUseMyClass}">
+		<div class="col-xs-12">
+			<div class="modal-data jumbotron"> 
+				<div class="modal-text" innerHTML="{{context.dataIn}}"></div>
+				<!--span>What is the sum?</span>
+                         <input class="form-control" type="text" #answer (keyup)="onKeyUp(answer.value)" autofocus-->
+
+			</div> 
+		</div>
+	</div>
+	<div class="row">
+				<div class="col-lg-12">
+					<div class="form-group">
+						<button class="btn btn-default pull-right"
+							#answer (click)="exit(answer.value)">Close</button>
+					</div>
+					<br />
+					<br />
+				</div>
+	 </div>
+</div>

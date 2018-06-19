@@ -1,0 +1,100 @@
+
+<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<div class="container-fluid">
+	<div class="col-xs-4">
+		<!-- p class="lead">injection of the number <strong>{{context.num1}}</strong> and the number <strong>{{context.num2}}</strong></p-->
+		<!--span class="style3">Quit: y/n ?<input class="form-control" type="text" #answer (keyup)="onKeyUp(answer.value)" autofocus> </span>-->
+
+	</div>
+
+
+<div class="container-fluid custom-modal-container">
+	<div class="row custom-modal-header">
+		<div class="col-sm-12">
+			<h3>Hormone Replacement Therapy</h3>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="row" [ngClass]="{'myclass' : shouldUseMyClass}">
+		<div class="col-xs-12">
+
+
+
+
+
+			<p class="style1">
+				<span lang="EN"><span class="style2">HRT:</span> <br /> <span>&nbsp;</span></span>
+			</p>
+			<p class="style1">
+				<span lang="EN"><b>The physicians of Boca Raton Ob/Gyn
+						Specialists are experts in evaluating for and treating hormone
+						deficiencies in women. They are very involved in educating their
+						patients so that they may together as a team, discern the issues
+						at hand and formulate a plan that is most suitable for the
+						patient. <br />
+				</b> <span>&nbsp;</span></span>
+			</p>
+			<p class="style1">
+				<span lang="EN">Many symptoms such as decreased libido, low
+					energy level, hot flashes or flushes, night sweats and insomnia may
+					be alleviated. Vaginal atrophy resulting from estrogen deficiency
+					and leading to vulva-vaginal thinning and dryness and pain, as well
+					as associated bladder irritability, weakness and infection, may be
+					remedied as well.</span>
+			</p>
+			<p class="style1">
+				<span lang="EN"><span>&nbsp;</span><br /> Treatment
+					modalities may include administering estrogen, testosterone, and
+					progesterone, and there are numerous alternative choices&nbsp;
+					available. We prescribe natural, bio-identical, and FDA approved
+					hormonal replacement therapies. These may be available as vaginal
+					creams and tablets; topical lotions, creams, gels and patches; oral
+					tablets and chewables and dissolving substances, aerosols,
+					injections and implants. <span>&nbsp;</span></span>
+			</p>
+			<p class="style1">
+				<span lang="EN"><br /> Not everyone may be a suitable
+					candidate for each treatment and as there are sometimes side
+					effects or risks that may outweigh the benefit being targeted.
+					Taking care in evaluating each patient individually for what their
+					needs may be and assessing for a potential hormonal deficiency,
+					while keeping the patient as a whole in mind, is prudent. Astute
+					assessment requires attentive listening to the patients&#39;
+					history and family history, concerns and symptoms. Performing
+					relevant physical examination and appropriate laboratory studies
+					and perhaps mammography pelvic ultrasound and b</span><span>one
+					densitometry <span lang="EN">may serve crucial as
+						well.&nbsp;</span>
+				</span>
+			</p>
+			<p class="style1">
+				<span lang="EN"><br /> If hormone replacement therapy is to
+					be initiated then periodic monitoring for potential side effects
+					and adverse events needs to be part of the follow up plan .
+					Maintaining periodic blood pressure monitoring, pelvic ultrasound
+					periodically depending on the patient, regular visits to assess for
+					any changes in medications, and surveillance of symptoms should be
+					practiced. in the event that a major surgery is to be planned or
+					another event that may require immobilization for an extended time
+					is anticipated, the hormone replacement therapy should be
+					discontinued several weeks ahead of time. This serves to reduce the
+					risk of deep venous thrombosis or embolism. The therapy usually may
+					be restarted after being fully ambulatory .</span>
+			</p>
+
+		</div>
+	</div>
+	<div class="col-lg-12">
+		<div class="form-group">
+			<button class="btn btn-default pull-right"
+				#answer (click)="exit(answer.value)">Close</button>
+		</div>
+		<br />
+	</div>
+</div> 
+</div>

@@ -1,0 +1,38 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<div class="container-fluid">
+	<div class="col-xs-4">
+		<!-- p class="lead">injection of the number <strong>{{context.num1}}</strong> and the number <strong>{{context.num2}}</strong></p-->
+		<!--span class="style3">Quit: y/n ?<input class="form-control" type="text" #answer (keyup)="onKeyUp(answer.value)" autofocus> </span>-->
+	</div>
+
+	<div class="container-fluid custom-modal-container">
+		<div class="row custom-modal-header">
+			<div class="col-sm-12">
+				<h3>Urodynamics Testing</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-4">
+		<h3>Bladder Conditions and Pelvic Relaxation</h3>
+		<p>
+			<i class="icon-desktop "></i>Evaluations include thorough history
+			taking with a detailed symptom survey, clinical physical examination,
+			Urodynamics testing and Pelvic ultrasound . Many patients have
+			already benefited through this treatment program by consistently
+			doing 6 to 8 weekly sessions. This is covered by most health
+			insurance policies including Medicare.
+		</p>
+	</div>
+
+	<div class="col-lg-12">
+		<div class="form-group">
+			<button class="btn .btn-default pull-right"
+				#answer (click)="exit(answer.value)">Close</button>
+		</div>
+		<br />
+		<br />
+	</div>
+
+
+</div>
